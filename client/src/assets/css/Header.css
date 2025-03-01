@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Serif+Todhri&display=swap');
+
+/* ========== HEADER STYLING (Improved Glassmorphism) ========== */
+.header {
+  background: linear-gradient(to right, #162d70, #1e40af, #233b8c);
+  backdrop-filter: blur(12px); /* Slightly increased blur for real glass effect */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Shrink effect when scrolling */
+.header.shrink {
+  backdrop-filter: blur(15px);
+  height: 60px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== HEADER CONTENT ========== */
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* ========== LOGO (Removed Underline) ========== */
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  transition: transform 0.3s ease;
+  text-decoration: none !important; /* Ensures no underline */
+}
+
+.logo a {
+  text-decoration: none !important; /* Ensures no underline for Link */
+}
+
+.logo h1:hover {
+  transform: scale(1.05);
+}
+
+/* ========== SEARCH BAR (Icon & Input in Same Position) ========== */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px); /* Stronger blur effect for true glass look */
+  padding: 12px 18px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 500px;
+  height: 42px;  /* Set fixed height */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15); /* Softer glow */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Glowing effect when focused */
+.search-bar:focus-within {
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Search Icon - Adjusted for Perfect Alignment */
+.search-bar svg {
+  color: white;
+  font-size: 18px;
+  margin-right: 10px; /* Ensure space between icon & text */
+}
+
+/* Input Field (Removed Border) */
+.search-bar input {
+  flex: 1;
+  border: none !important; /* Completely remove border */
+  background: transparent;
+  font-size: 1rem;
+  color: white;
+  width: 100%;
+  outline: none;
+}
+
+/* Placeholder Styling */
+.search-bar input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ========== NAVIGATION LINKS (White Shade + Animation) ========== */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9); /* White shade */
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navigation Animation */
+.nav-link:hover {
+  transform: translateY(-2px);
+  color: white; /* Slightly brighter on hover */
+}
+
+/* ========== PROFILE MENU (Dropdown in Pearl White) ========== */
+.profile-menu {
+  position: relative;
+}
+
+/* Admin Button (Profile Dropdown) */
+.profile-button {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* ========== PROFILE DROPDOWN (PEARL WHITE with Soft Hover) ========== */
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.95); /* Pearl white color */
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  min-width: 220px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show dropdown when active */
+.profile-dropdown.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown Items */
+.profile-dropdown .dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: #333; /* Dark text for visibility */
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Rounded last dropdown item */
+.profile-dropdown .dropdown-item:last-child {
+  border-bottom: none;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Hover Effect */
+.profile-dropdown .dropdown-item:hover {
+  background: rgba(0, 0, 0, 0.05); /* Soft hover effect */
+  transform: scale(1.02);
+}
+
+/* ========== RESPONSIVE STYLING ========== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  /* Mobile menu button */
+  .mobile-menu {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 6px;
+  }
+
+  /* Search bar adjustments */
+  .search-bar {
+    max-width: 100%;
+    width: 90%;
+    padding: 10px 15px;
+  }
+}
+

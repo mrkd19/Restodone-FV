@@ -1,0 +1,52 @@
+/* Container for quick actions section */
+.quick-actions {
+  margin: 40px 0; /* Adds vertical margin */
+}
+
+/* Styling for the heading within quick actions */
+.quick-actions h2 {
+  font-size: 2rem; /* Sets font size */
+  text-align: center; /* Centers the text */
+  margin-bottom: 20px; /* Adds space below the heading */
+  color: #333; /* Sets text color */
+}
+
+/* Grid container for action cards */
+.actions-grid {
+  display: grid; /* Uses CSS Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between grid items */
+}
+
+/* Individual action card styling */
+.action-card {
+  background: white; /* Card background color */
+  padding: 20px; /* Inner spacing */
+  border-radius: 12px; /* Rounded corners */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Column layout */
+  align-items: center; /* Center align items */
+  gap: 10px; /* Space between child elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for action cards */
+.action-card:hover {
+  transform: translateY(-5px); /* Slight upward movement */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+  background: #f8fafc; /* Light background color on hover */
+}
+
+/* Styling for SVG icons within action cards */
+.action-card svg {
+  color: #2563eb; /* Icon color */
+}
+
+/* Styling for text within action cards */
+.action-card span {
+  color: #4b5563; /* Text color */
+  text-align: center; /* Center align text */
+  font-size: 0.9rem; /* Font size */
+}

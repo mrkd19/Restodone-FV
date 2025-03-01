@@ -1,0 +1,106 @@
+/* Container for the list of restaurant cards */
+.homepage-restaurant-list {
+  display: flex; /* Arrange cards in a row */
+  justify-content: space-between; /* Space out cards evenly */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the list */
+  max-width: 1200px; /* Maximum width of the list */
+  margin: 0 auto; /* Center the list horizontally */
+}
+
+/* Individual restaurant card */
+.homepage-restaurant-card {
+  flex: 1; /* Allow cards to grow and shrink equally */
+  max-width: 360px; /* Maximum width of each card */
+  background: white; /* Background color of the card */
+  border-radius: 12px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for the restaurant card */
+.homepage-restaurant-card:hover {
+  transform: translateY(-5px); /* Slightly lift the card */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Container for the restaurant image */
+.homepage-restaurant-image {
+  height: 200px; /* Fixed height for the image container */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Styling for the restaurant image */
+.homepage-restaurant-image img {
+  width: 100%; /* Full width of the container */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Cover the container without distortion */
+}
+
+/* Container for the restaurant information */
+.homepage-restaurant-info {
+  padding: 15px 20px; /* Padding around the information */
+  text-align: left; /* Left align the text */
+}
+
+/* Styling for the restaurant name */
+.homepage-restaurant-info h3 {
+  margin: 0 0 10px; /* Margin below the heading */
+  font-size: 1.4rem; /* Font size */
+  color: #1f2937; /* Text color */
+}
+
+/* Container for restaurant details (rating, cuisine, price) */
+.homepage-restaurant-details {
+  display: flex; /* Arrange details in a row */
+  justify-content: space-between; /* Space out details evenly */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 15px; /* Margin below the details */
+}
+
+/* Styling for the restaurant rating */
+.homepage-restaurant-rating {
+  display: flex; /* Arrange rating elements in a row */
+  align-items: center; /* Align items vertically */
+  gap: 4px; /* Space between rating elements */
+  font-size: 0.9rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  color: #fbbf24; /* Text color */
+}
+
+/* Styling for the cuisine and price information */
+.homepage-restaurant-cuisine,
+.homepage-restaurant-price {
+  font-size: 0.9rem; /* Font size */
+  color: #6b7280; /* Text color */
+}
+
+/* Styling for the restaurant location */
+.homepage-restaurant-location {
+  font-size: 0.9rem; /* Font size */
+  color: #4b5563; /* Text color */
+  margin-bottom: 15px; /* Margin below the location */
+}
+
+/* Styling for the book button */
+.homepage-restaurant-book-button {
+  display: block; /* Block level element */
+  width: 100%; /* Full width of the container */
+  padding: 12px; /* Padding around the button */
+  background: #2563eb; /* Background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 6px; /* Rounded corners */
+  text-align: center; /* Center align the text */
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s ease; /* Smooth transition for background */
+}
+
+/* Hover effect for the book button */
+.homepage-restaurant-book-button:hover {
+  background: #1d4ed8; /* Darker background on hover */
+}

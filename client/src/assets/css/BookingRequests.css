@@ -1,0 +1,142 @@
+/* General Container */
+.booking-requests-container {
+    padding: 20px;
+    background-color: #f8fafc;
+    min-height: 100vh;
+  }
+  
+  /* Page Title */
+  .booking-requests-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Header */
+  thead {
+    background-color: #1e3a8a;
+    color: white;
+  }
+  
+  thead th {
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  /* Table Body */
+  tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  /* Table Row Hover */
+  tbody tr:hover {
+    background-color: #f1f5f9;
+  }
+  
+  /* Status Badge */
+  .status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  /* Status Colors */
+  .status.pending {
+    background-color: #facc15;
+    color: #854d0e;
+  }
+  
+  .status.approved {
+    background-color: #22c55e;
+    color: white;
+  }
+  
+  .status.rejected {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  /* Action Buttons */
+  .approve-btn, .reject-btn, .reply-btn {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: none;
+  }
+  
+  .approve-btn {
+    background: #2563eb;
+    color: white;
+  }
+  
+  .approve-btn:hover {
+    background: #1e40af;
+  }
+  
+  .reject-btn {
+    background: #ef4444;
+    color: white;
+  }
+  
+  .reject-btn:hover {
+    background: #b91c1c;
+  }
+  
+  .reply-btn {
+    background: #22c55e;
+    color: white;
+  }
+  
+  .reply-btn:hover {
+    background: #15803d;
+  }
+  
+  /* Input Fields */
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.5);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.9rem;
+    }
+  
+    thead th, tbody td {
+      padding: 8px;
+    }
+  
+    .approve-btn, .reject-btn, .reply-btn {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+    }
+  }
+  

@@ -1,0 +1,61 @@
+/* Container for the popular cuisines section */
+.popular-cuisines {
+  margin: 40px 0; /* Adds vertical margin */
+}
+
+/* Styling for the section header */
+.popular-cuisines h2 {
+  font-size: 2rem; /* Sets font size */
+  margin-bottom: 20px; /* Adds space below the header */
+  color: #333; /* Sets text color */
+  text-align: center; /* Centers the text */
+}
+
+/* Grid layout for the cuisine cards */
+.cuisines-grid {
+  display: grid; /* Uses CSS Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between grid items */
+}
+
+/* Styling for each cuisine card */
+.cuisine-card {
+  position: relative; /* Allows positioning of child elements */
+  border-radius: 12px; /* Rounds the corners */
+  overflow: hidden; /* Hides overflow content */
+  height: 200px; /* Sets fixed height */
+  cursor: pointer; /* Changes cursor on hover */
+}
+
+/* Styling for the images inside the cuisine cards */
+.cuisine-card img {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Ensures image covers the area */
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+/* Scale image slightly on hover */
+.cuisine-card:hover img {
+  transform: scale(1.05); /* Scales image */
+}
+
+/* Styling for the title inside the cuisine card */
+.cuisine-card h3 {
+  position: absolute; /* Positions the title absolutely */
+  bottom: 0; /* Aligns to the bottom */
+  left: 0; /* Aligns to the left */
+  right: 0; /* Aligns to the right */
+  padding: 15px; /* Adds padding */
+  margin: 0; /* Removes default margin */
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); /* Gradient background */
+  color: white; /* White text color */
+  text-align: center; /* Centers the text */
+  font-size: 1.1rem; /* Sets font size */
+  transition: background 0.3s ease; /* Smooth background transition */
+}
+
+/* Darkens the background gradient on hover */
+.cuisine-card:hover h3 {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 1)); /* Darker gradient */
+}

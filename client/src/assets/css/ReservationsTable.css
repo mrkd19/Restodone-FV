@@ -1,0 +1,118 @@
+/* Reservations Table Container */
+.reservations-container {
+    width: 100%;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reservations-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styles */
+  .reservations-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .reservations-table th,
+  .reservations-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .reservations-table th {
+    background: #1e40af;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  /* Status Colors */
+  .status-confirmed {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status-pending {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Buttons */
+  .btn-approve,
+  .btn-reject,
+  .btn-delete {
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    margin: 0 3px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .btn-approve {
+    background: green;
+    color: white;
+  }
+  
+  .btn-reject {
+    background: red;
+    color: white;
+  }
+  
+  .btn-delete {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .btn-approve:hover {
+    background: darkgreen;
+  }
+  
+  .btn-reject:hover {
+    background: darkred;
+  }
+  
+  .btn-delete:hover {
+    background: darkred;
+  }
+  
+  /* Pagination */
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .pagination-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination-button.active {
+    background: #0056b3;
+  }
+  
+  .pagination-button:hover {
+    background: #0056b3;
+  }
+  
+  .pagination-button:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+  

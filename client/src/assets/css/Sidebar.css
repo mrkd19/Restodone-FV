@@ -1,0 +1,62 @@
+/* Sidebar.css - Admin Sidebar Styling */
+.sidebar-container {
+    width: 250px;
+    height: 100vh;
+    background-color: #1e40af;
+    color: white;
+    padding: 1.5rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 101; /* Ensure the sidebar is above the main header */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-logo {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .sidebar-logo h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white; /* Ensure the logo text is white */
+    
+    text-decoration: none; /* Remove underline */
+  
+  }
+  
+  .sidebar-container nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .sidebar-container nav li {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .sidebar-container nav li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar-container nav li.active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .sidebar-container nav li svg {
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+  }
+  
+  .sidebar-container nav li span {
+    font-size: 0.95rem;
+  }
+  

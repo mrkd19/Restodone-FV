@@ -1,0 +1,40 @@
+/* StatCard.css - Statistic Card Styling */
+.stat-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stat-icon {
+    background-color: #e0e7ff;
+    color: #1e40af;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.stat-info h3 {
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+}
+
+.stat-value span:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+.stat-change {
+    color: #22c55e;
+    font-size: 0.875rem;
+}

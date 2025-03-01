@@ -1,0 +1,29 @@
+.search-dropdown {
+    position: absolute;
+    top: 100%; /* Align the dropdown just below the search bar */
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Matches the width of the search bar */
+    max-height: 200px; /* Limits height and allows scrolling */
+    overflow-y: auto;
+    z-index: 1000;
+    margin-top: 5px; /* Adds spacing between the search bar and dropdown */
+  }
+  
+  .dropdown-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem; /* Slightly smaller text for better readability */
+  }
+  
+  .dropdown-item:hover {
+    background: #f7f7f7;
+    color: #2563eb; /* Optional: Add hover color */
+  }
+  

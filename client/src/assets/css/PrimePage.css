@@ -1,0 +1,123 @@
+/* Base styles for the Prime Page */
+.prime-page {
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Banner Section */
+/* Styles for the hero banner background with a dark overlay and centered content */
+.hero-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles for the content inside the hero banner */
+.hero-content {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/* Styles for the main title in the hero banner */
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Styles for the subtitle in the hero banner */
+.hero-subtitle {
+    font-size: 1.5rem;
+}
+
+/* Styles for the description text in the hero banner */
+.hero-description {
+    font-size: 1.2rem;
+}
+
+/* Membership Plans Section */
+/* Container for the membership plans section */
+.membership-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Container for the individual plan cards */
+.plans-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+/* Styles for each plan card */
+.plan-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Highlight style for the most popular plan */
+.popular-plan {
+    border-color: rgb(255, 171, 14);
+}
+
+/* Badge style for highlighting special features */
+.badge {
+    background-color: rgb(255, 166, 0);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* How It Works Section */
+/* Container for the steps in the "How It Works" section */
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+/* Styles for each step card */
+.step-card {
+    text-align: center;
+    width: 150px;
+}
+
+/* Icon style for each step */
+.step-icon {
+    font-size: 2rem;
+    color: rgb(32, 92, 255);
+}
+
+/* Featured Restaurants Section */
+/* Container for the featured restaurant cards */
+.restaurants-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+/* Styles for each restaurant card */
+.restaurant-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Styles for the "Book Now" button */
+.book-now-button {
+    color: rgb(0, 47, 255);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover effect for the "Book Now" button */
+.book-now-button:hover {
+    text-decoration: underline;
+}

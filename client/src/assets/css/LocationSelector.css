@@ -1,0 +1,169 @@
+.header-location {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+/* Container for the location bar */
+.location-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 20px;
+  position: relative;
+  width: 250px;
+}
+
+/* Location bar style */
+.location-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8; /* Light gray background */
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 15px;
+  width: 300px; /* Adjust width as needed */
+  height: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  cursor: pointer;
+  position: relative;
+}
+
+/* Location icon inside the bar */
+.icon-location {
+  font-size: 18px;
+  color: #e74c3c; /* Icon color (luxury red) */
+  margin-right: 10px;
+}
+
+.location-display {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown-icon {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Location details (text and dropdown) */
+.location-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+/* Title above the dropdown */
+.location-title {
+  font-size: 12px;
+  color: #999; /* Light gray text for the title */
+  margin-bottom: 2px;
+}
+
+/* Dropdown styling */
+.location-selector {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #333; /* Dark text */
+  font-size: 14px;
+  width: 100%;
+  outline: none; /* Remove focus outline */
+  cursor: pointer;
+}
+
+/* Adjust dropdown arrow */
+.location-selector::-ms-expand {
+  display: none; /* Remove default arrow in IE/Edge */
+}
+
+/* Dropdown hover styles */
+.location-selector:hover {
+  color: #e74c3c; /* Change text color on hover */
+}
+
+/* Optional Enhancements */
+
+/* Hover effect for the location bar */
+.location-bar:hover {
+  border-color: #e74c3c; /* Highlight border on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Enhance shadow */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .location-bar {
+    width: 150px;
+  }
+}
+
+.current-location-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.current-location-button:hover {
+  background-color: #c0392b;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+/* Use Current Location Button */
+.use-location-button {
+  display: block;
+  width: 100%;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.use-location-button:hover {
+  background-color: #e67e22;
+}
+
+/* Popular Cities */
+.popular-cities {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.city-option {
+  padding: 8px 10px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: #333;
+}
+
+.city-option:hover {
+  background-color: #f1f1f1;
+}

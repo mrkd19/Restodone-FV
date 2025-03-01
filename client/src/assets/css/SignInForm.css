@@ -1,0 +1,102 @@
+/* Container for the entire sign-in form */
+.signin-container {
+  width: 100%;
+}
+
+/* Header section of the sign-in form */
+.signin-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* Container for the logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* Styling for the logo icon */
+.logo-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #2563eb;
+}
+
+/* Title of the sign-in form */
+.signin-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Container for the form elements */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Wrapper for each form group */
+.form-group {
+  width: 100%;
+}
+
+/* Styling for the input fields */
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #f3f4f6;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+/* Focus state for the input fields */
+.form-input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Container for the forgot password link */
+.forgot-password {
+  text-align: center;
+}
+
+/* Styling for the forgot password link */
+.forgot-password-link {
+  font-size: 0.875rem;
+  color: #4b5563;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+/* Hover state for the forgot password link */
+.forgot-password-link:hover {
+  color: #2563eb;
+}
+
+/* Styling for the submit button */
+.submit-button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover state for the submit button */
+.submit-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Focus state for the submit button */
+.submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #93c5fd;
+}

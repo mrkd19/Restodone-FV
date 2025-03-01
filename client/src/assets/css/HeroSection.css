@@ -1,0 +1,136 @@
+/* Hero section styling */
+.hero-section {
+  /* Background with gradient overlay and image */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&auto=format&fit=crop');
+  background-size: cover; /* Ensure background image covers the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  width: 100%; /* Full width */
+  height: 550px; /* Fixed height */
+  margin: 30px auto; /* Center horizontally with margin */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); /* Shadow effect */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  color: white; /* Text color */
+  text-align: center; /* Center text */
+}
+
+/* Hero content container */
+.hero-content {
+  max-width: 800px; /* Maximum width */
+  padding: 20px; /* Padding around content */
+}
+
+/* Hero section heading */
+.hero-content h1 {
+  font-size: 4rem; /* Large font size */
+  margin-bottom: 20px; /* Space below heading */
+  font-weight: bold; /* Bold text */
+}
+
+/* Hero section paragraph */
+.hero-content p {
+  font-size: 1.5rem; /* Medium font size */
+  margin-bottom: 25px; /* Space below paragraph */
+}
+
+/* Location selector container */
+.location-selector {
+  position: relative; /* Position relative for absolute positioning of dropdown */
+  width: 320px; /* Fixed width */
+  margin: 0 auto; /* Center horizontally */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Location button styling */
+.location-button {
+  background: #ffffff; /* White background */
+  padding: 14px 24px; /* Padding inside button */
+  border-radius: 25px; /* Rounded corners */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Center items vertically */
+  gap: 12px; /* Space between items */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  color: #414040; /* Text color */
+  font-size: 1.2rem; /* Font size */
+  font-weight: 500; /* Medium font weight */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Location button hover effect */
+.location-button:hover {
+  background: #f3f4f6; /* Light grey background on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+/* Location dropdown menu */
+.location-dropdown {
+  position: absolute; /* Absolute positioning */
+  top: 120%; /* Position below the button */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  background: white; /* White background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Shadow effect */
+  overflow: hidden; /* Hide overflow */
+  z-index: 1050; /* Ensure dropdown is above other elements */
+  padding: 10px 0; /* Padding inside dropdown */
+}
+
+/* Individual location option */
+.location-option {
+  padding: 12px 20px; /* Padding inside option */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1.1rem; /* Font size */
+  color: #444; /* Text color */
+  text-align: left; /* Align text to the left */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Location option hover effect */
+.location-option:hover {
+  background: #f0f0f0; /* Light grey background on hover */
+  color: #e63946; /* Red text color on hover */
+}
+
+/* First location option styling */
+.location-option:first-child {
+  color: #e63946; /* Red text color */
+  font-weight: bold; /* Bold text */
+}
+
+/* First location option hover effect */
+.location-option:first-child:hover {
+  background: #ffe8e8; /* Light red background on hover */
+}
+
+/* Current location display */
+.current-location {
+  color: gray; /* Grey text color */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Center items vertically */
+  gap: 8px; /* Space between text and logo */
+}
+
+/* Current location option styling */
+.current-location-option { 
+  background: #ffffffbb; /* Semi-transparent white background */
+  padding: 14px 24px; /* Padding inside option */
+  border-radius: 25px; /* Rounded corners */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Center items vertically */
+  gap: 12px; /* Space between items */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  color: #ff5100; /* Orange text color */
+  font-size: 1.2rem; /* Font size */
+  font-weight: 500; /* Medium font weight */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}

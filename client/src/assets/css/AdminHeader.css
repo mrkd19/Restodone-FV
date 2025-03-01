@@ -1,0 +1,32 @@
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #1e40af;
+    color: white;
+    border-bottom: 2px solid #162a78;
+  }
+  
+  .admin-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .logout-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .logout-button:hover {
+    background-color: #c9302c;
+  }
+  

@@ -1,0 +1,75 @@
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-heading {
+    font-size: 2.5rem;
+    color: #2563eb; /* Blue theme for heading */
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .contact-item {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .contact-form {
+    background: #ffffff; /* White form background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2563eb; /* Blue label color */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #2563eb; /* Blue button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #1d4ed8; /* Darker blue on hover */
+  }
+  

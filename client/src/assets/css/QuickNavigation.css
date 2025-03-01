@@ -1,0 +1,55 @@
+.quick-navigation-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.quick-navigation {
+  display: flex; /* Aligns navigation items in a row */
+  justify-content: space-evenly; /* Distributes items evenly with equal space */
+  align-items: center; /* Centers items vertically */
+  padding: 15px 20px; /* Adds spacing around the navigation */
+  background: #fff; /* White background for the navigation bar */
+  border-radius: 20px; /* Rounded corners for design consistency */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 925px; /* Limits the navigation bar's width */
+  margin: 0 auto; /* Centers the navigation bar */
+  height: 120px; /* Sets the height to match desired proportions */
+}
+
+.nav-item {
+  display: flex; /* Aligns icon and text vertically */
+  flex-direction: column; /* Stacks the icon and label */
+  align-items: center; /* Centers items horizontally */
+  gap: 8px; /* Space between icon and label */
+  padding: 10px 15px; /* Adds padding for clickable area */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  border-radius: 12px; /* Rounded corners for hover effect */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-item:hover {
+  background: #f7f7f7; /* Light background on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Adds shadow on hover */
+}
+
+.nav-item svg {
+  color: #2563eb; /* Blue color for icons */
+  font-size: 1.5rem; /* Ensures icons are prominent */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-item:hover svg {
+  color: #1d4ed8; /* Darker blue on hover */
+}
+
+.nav-item span {
+  font-size: 1rem; /* Font size for label */
+  color: #4b5563; /* Gray color for text */
+  text-align: center; /* Centers the text */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-item:hover span {
+  color: #2563eb; /* Blue text on hover */
+}

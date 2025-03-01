@@ -1,0 +1,22 @@
+.admin-container {
+    display: flex;
+  }
+  
+  .admin-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 20px;
+  }
+  .admin-app {
+    min-height: 100vh;
+    background-color: #f1f5f9;
+    display: flex;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    min-height: 100vh;
+  }
+  
+  /* AdminPage.css */
+  

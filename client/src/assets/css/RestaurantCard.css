@@ -1,0 +1,163 @@
+.restodone-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  background: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.restodone-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.restodone-card-image {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.restodone-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.restodone-card:hover .restodone-card-image img {
+  transform: scale(1.08);
+}
+
+.restodone-card-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.restodone-card:hover .restodone-card-image::after {
+  opacity: 1;
+}
+
+.restodone-card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.restodone-card-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: #333;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.restodone-card:hover .restodone-card-name {
+  color: #1e3a8a;
+}
+
+.restodone-card-location {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.restodone-card-location::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'%3E%3C/path%3E%3Ccircle cx='12' cy='10' r='3'%3E%3C/circle%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 6px;
+}
+
+.restodone-card-cuisine-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.restodone-card-cuisine, .restodone-card-price {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #555;
+}
+
+.restodone-card-cuisine svg, .restodone-card-price svg {
+  color: #1e3a8a;
+}
+
+.restodone-card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.restodone-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 50px;
+  background-color: #f0f9ff;
+  color: #1e3a8a;
+}
+
+.restodone-card-offers {
+  display: flex;
+  gap: 8px;
+}
+
+.restodone-card-offer {
+  background: linear-gradient(135deg, #ff6b6b, #ff8787);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 50px;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.restodone-card:hover .restodone-card-offer {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .restodone-card-image {
+    height: 180px;
+  }
+  
+  .restodone-card-content {
+    padding: 16px;
+  }
+  
+  .restodone-card-name {
+    font-size: 18px;
+  }
+}
